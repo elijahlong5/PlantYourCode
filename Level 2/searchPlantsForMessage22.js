@@ -12,6 +12,17 @@ function translate(message) {
         phylum: "o",
         rea: "u"
     };
+    // translates into plant latin
+    let mapDict = {
+        'a': 'tiva',
+        'e': "llia",
+        'i': "mus",
+        'o': "phylum",
+        'u': "rea",
+    }
+    let ans = message.split('').map(x => (x.toLowerCase() in mapDict) ? x + mapDict[x.toLowerCase()] : x).join('');
+    console.log(ans);
+    return ans;
     // for (let k in Object.keys(vowelReplacements)){
     //     let sub = Object.keys(vowelReplacements)[k];
     //     console.log(k);
