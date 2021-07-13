@@ -10,7 +10,9 @@ pipeline {
         }
         stage("Run tests") {
             steps {
-                sh 'yarn install && yarn test'
+                nodejs(nodeJSInstallationName: 'Node'){
+                    sh 'yarn install && yarn test'
+                }
             }
         }
     }
