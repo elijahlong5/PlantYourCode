@@ -8,8 +8,5 @@ pipeline {
                 echo "$GIT_BRANCH"
             }
         }
-        stage("Goodbye") {
-            sh 'echo "see ya"'
-        }
     }
 }
