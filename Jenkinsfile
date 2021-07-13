@@ -8,12 +8,20 @@ pipeline {
                 echo "$GIT_BRANCH"
             }
         }
-        stage("Run tests") {
+        stage("Install yarn") {
             steps {
                 nodejs(nodeJSInstallationName: 'Node'){
-                    sh 'yarn install && yarn test'
+                    sh 'yarn install'
                 }
             }
         }
+        stage("Run tests") {
+            steps {
+                nodejs(nodeJSInstallationName: 'Node'){
+                    sh 'yarn test'
+                }
+            }
+        }
+
     }
 }
