@@ -37,13 +37,13 @@ function translatePlantLatin(message){
     return returnStr;
 }
 
-let r = translatePlantLatin("I love water!");
+// let r = translatePlantLatin("I love water!");
+//
+// console.log(r);
+// console.log(r === "Imus lophylumvellia wativatelliar!");
+//
+// let r2 = translatePlantLatin("YoU");
+// console.log(r2);
+// console.log(r2 === "YophylumUrea");
 
-console.log(r);
-console.log(r === "Imus lophylumvellia wativatelliar!");
-
-let r2 = translatePlantLatin("YoU");
-console.log(r2);
-console.log(r2 === "YophylumUrea");
-
-
+module.exports = translatePlantLatin

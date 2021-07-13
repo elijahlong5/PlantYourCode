@@ -1,0 +1,15 @@
+{
+  "name": "PlantYourCode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/elijahlong5/PlantYourCode.git",
+  "author": "Elijah <elijah498@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^27.0.6",
+    "types": "^0.1.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
